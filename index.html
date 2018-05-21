@@ -41,17 +41,17 @@
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </p>
         </div>
-        <p class="header-middle__authorization">
-          <a href="#">Войти</a>
-          <a href="#">Регистрация</a>
-        </p>
+        <div class="header-middle__authorization">
+          <a class="button-authorization" href="#">Войти</a>
+          <a class="button-authorization" href="#">Регистрация</a>
+        </div>
       </div>
 
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item"><a href="#">Главная</a></li>
           <li class="main-nav__item"><a href="#">Компания</a></li>
-          <li class="main-nav__item"><a href="#">Каталог</a></li>
+          <li class="main-nav__item"><a href="catalog.html">Каталог</a></li>
           <li class="main-nav__item"><a href="#">Новости</a></li>
           <li class="main-nav__item"><a href="#">Спецпредложения</a></li>
           <li class="main-nav__item"><a href="#">Доставка</a></li>
@@ -67,15 +67,15 @@
         <ul class="promo__list">
           <li class="promo__item">
             <h3 class="promo__heading">Материалы</h3>
-            <a class="promo__link button-promo" href="#">На любой вкус</a>
+            <a class="promo__link button button--grey" href="#">На любой вкус</a>
           </li>
           <li class="promo__item">
             <h3 class="promo__heading">Инструмент</h3>
-            <a class="promo__link button-promo" href="#">На все случаи</a>
+            <a class="promo__link button button--grey" href="#">На все случаи</a>
           </li>
           <li class="promo__item">
             <h3 class="promo__heading">Техника</h3>
-            <a class="promo__link button-promo" href="#">Для стройки</a>
+            <a class="promo__link button button--grey" href="#">Для стройки</a>
           </li>
         </ul>
 
@@ -88,97 +88,182 @@
           <li class="slider__item">
             <h3 class="slider__heading">Перфораторы</h3>
             <p class="slider__text">Настоящие мужские игрушки</p>
-            <a class="slider__link button" href="#">Открыть каталог</a>
+            <a class="slider__link button" href="catalog.html">Открыть каталог</a>
           </li>
         </ul>
 
         <ul class="promo__list--advantage">
           <li class="promo__item">
             <h3 class="promo__heading">Скидки 50%</h3>
-            <a class="promo__link button-promo" href="#">На 350 товаров</a>
+            <a class="promo__link button button--grey" href="#">На 350 товаров</a>
           </li>
           <li class="promo__item">
             <h3 class="promo__heading">Доставка</h3>
-            <a class="promo__link button-promo" href="#">Бесплатно</a>
+            <a class="promo__link button button--grey" href="#">Бесплатно</a>
           </li>
         </ul>
       </section>
 
-      <section class="goods popular">
-        <h2 class="popular__heading heading">Популярные товары:</h2>
-        <a class="popular__link button" href="#">Все популярные товары</a>
+      <section class="goods-popular popular">
+        <div class="popular__heading">
+          <h2 class="popular__caption heading">Популярные товары:</h2>
+          <a class="popular__link button" href="#">Все популярные товары</a>
+        </div>
 
-        <ul class="goods__list">
-          <li class="goods__item">
-            <img class="goods__img" src="#" alt="Перфоратор BOSCH BFG 9000">
-            <h3 class="goods__caption">Перфоратор BOSCH BFG 9000</h3>
-            <p class="goods__value">32500 Р.</p>
-            <a class="goods__link" href="#">25500 Р.</a>
+        <ul class="popular__list cards">
+          <li class="cards__item">
+            <article class="goods">
+              <h3 class="goods__caption">
+                <span class="goods__name">Перфоратор BOSCH</span>
+                <span class="goods__model">BFG 9000</span>
+              </h3>
+              <p class="goods__new"></p>
+              <div class="goods__image-select">
+                <img class="goods__image" src="#" alt="Перфоратор BOSCH BFG 9000">
+                <div class="goods__select">
+                  <button class="button button--green" type="button" name="add-basket">Купить</button>
+                  <button class="button button--border-green" type="button" name="add-tab">В закладки</button>
+                </div>
+              </div>
+              <p class="goods__price">
+                <span class="goods__value">32500 Р.</span>
+                <b class="goods__discount">25500 Р.</b>
+              </p>
+            </article>
           </li>
-          <li class="goods__item">
-            <img class="goods__img" src="#" alt="Перфоратор BOSCH BFG 3000">
-            <h3 class="goods__caption">Перфоратор BOSCH BFG 3000</h3>
-            <p class="goods__value">22500 Р.</p>
-            <a class="popular-goods__link" href="#">15500 Р.</a>
+          <li class="cards__item">
+            <article class="goods">
+              <h3 class="goods__caption">
+                <span class="goods__name">Перфоратор BOSCH</span>
+                <span class="goods__model">BFG 3000</span>
+              </h3>
+              <p class="goods__new"></p>
+              <div class="goods__image-select">
+                <img class="goods__image" src="#" alt="Перфоратор BOSCH BFG 3000">
+                <div class="goods__select">
+                  <button class="button button--green" type="button" name="add-basket">Купить</button>
+                  <button class="button button--border-green" type="button" name="add-tab">В закладки</button>
+                </div>
+              </div>
+              <p class="goods__price">
+                <span class="goods__value">22500 Р.</span>
+                <b class="goods__discount">15500 Р.</b>
+              </p>
+            </article>
           </li>
-          <li class="goods__item">
-            <img class="goods__img" src="#" alt="Перфоратор BOSCH BFG 6000">
-            <h3 class="goods__caption">Перфоратор BOSCH BFG 6000</h3>
-            <p class="goods__value">30500 Р.</p>
-            <a class="goods__link" href="#">25500 Р.</a>
+          <li class="cards__item">
+            <article class="goods">
+              <h3 class="goods__caption">
+                <span class="goods__name">Перфоратор BOSCH</span>
+                <span class="goods__model">BFG 6000</span>
+              </h3>
+              <p class="goods__new"></p>
+              <div class="goods__image-select">
+                <img class="goods__image" src="#" alt="Перфоратор BOSCH BFG 6000">
+                <div class="goods__select">
+                  <button class="button button--green" type="button" name="add-basket">Купить</button>
+                  <button class="button button--border-green" type="button" name="add-tab">В закладки</button>
+                </div>
+              </div>
+              <p class="goods__price">
+                <span class="goods__value">30500 Р.</span>
+                <b class="goods__discount">25500 Р.</b>
+              </p>
+            </article>
           </li>
-          <li class="goods__item">
-            <img class="goods__img" src="#" alt="Перфоратор BOSCH BFG 2000">
-            <h3 class="goods__caption">Перфоратор BOSCH BFG 2000</h3>
-            <a class="goods__link" href="#">12500 Р.</a>
+          <li class="cards__item">
+            <article class="goods">
+              <h3 class="goods__caption">
+                <span class="goods__name">Перфоратор BOSCH</span>
+                <span class="goods__model">BFG 2000</span>
+              </h3>
+              <p class="goods__new">New</p>
+              <div class="goods__image-select">
+                <img class="goods__image" src="#" alt="Перфоратор BOSCH BFG 2000">
+                <div class="goods__select">
+                  <button class="button button--green" type="button" name="add-basket">Купить</button>
+                  <button class="button button--border-green" type="button" name="add-tab">В закладки</button>
+                </div>
+              </div>
+              <p class="goods__price">
+                <span class="goods__value"></span>
+                <b class="goods__discount">12500 Р.</b>
+              </p>
+            </article>
           </li>
         </ul>
       </section>
 
-      <section class="brends popular">
-        <h2 class="popular__heading heading">Популярные производители:</h2>
-        <a class="popular__link button" href="#">Все производители</a>
+      <section class="brends-popular popular">
+        <div class="popular__heading">
+          <h2 class="popular__caption heading">Популярные производители:</h2>
+          <a class="popular__link button" href="#">Все производители</a>
+        </div>
 
-        <ul class="brends__list">
-          <li class="brends__item">
-            <a class="brends__link" href="#">
-              <img class="brends__img" src="#" alt="BOSCH">
-            </a>
+        <ul class="popular__list cards">
+          <li class="cards__item">
+            <article class="brends">
+              <h3 class="visually-hidden">Bosch</h3>
+              <a class="brends__link" href="#">
+                <img class="brends__img" src="#" alt="Bosch">
+              </a>
+            </article>
           </li>
-          <li class="brends__item">
-            <a class="brends__link" href="#">
-              <img class="brends__img" src="#" alt="Makita">
-            </a>
+          <li class="cards__item">
+            <article class="brends">
+              <h3 class="visually-hidden">Makita</h3>
+              <a class="brends__link" href="#">
+                <img class="brends__img" src="#" alt="Makita">
+              </a>
+            </article>
           </li>
-          <li class="brends__item">
-            <a class="brends__link" href="#">
-              <img class="brends__img" src="#" alt="DeWalt">
-            </a>
+          <li class="cards__item">
+            <article class="brends">
+              <h3 class="visually-hidden">DeWalt</h3>
+              <a class="brends__link" href="#">
+                <img class="brends__img" src="#" alt="DeWalt">
+              </a>
+            </article>
           </li>
-          <li class="brends__item">
-            <a class="brends__link" href="#">
-              <img class="brends__img" src="#" alt="Интерскол">
-            </a>
+          <li class="cards__item">
+            <article class="brends">
+              <h3 class="visually-hidden">Интерскол</h3>
+              <a class="brends__link" href="#">
+                <img class="brends__img" src="#" alt="Интерскол">
+              </a>
+            </article>
           </li>
-          <li class="brends__item">
-            <a class="brends__link" href="#">
-              <img class="brends__img" src="#" alt="Hitachi">
-            </a>
+          <li class="cards__item">
+            <article class="brends">
+              <h3 class="visually-hidden">Hitachi</h3>
+              <a class="brends__link" href="#">
+                <img class="brends__img" src="#" alt="Hitachi">
+              </a>
+            </article>
           </li>
-          <li class="brends__item">
-            <a class="brends__link" href="#">
-              <img class="brends__img" src="#" alt="LG">
-            </a>
+          <li class="cards__item">
+            <article class="brends">
+              <h3 class="visually-hidden">LG</h3>
+              <a class="brends__link" href="#">
+                <img class="brends__img" src="#" alt="LG">
+              </a>
+            </article>
           </li>
-          <li class="brends__item">
-            <a class="brends__link" href="#">
-              <img class="brends__img" src="#" alt="AEG">
-            </a>
+          <li class="cards__item">
+            <article class="brends">
+              <h3 class="visually-hidden">AEG</h3>
+              <a class="brends__link" href="#">
+                <img class="brends__img" src="#" alt="AEG">
+              </a>
+            </article>
           </li>
-          <li class="brends__item">
-            <a class="brends__link" href="#">
-              <img class="brends__img" src="#" alt="Metabo">
-            </a>
+          <li class="cards__item">
+            <article class="brends">
+              <h3 class="visually-hidden">Metabo</h3>
+              <a class="brends__link" href="#">
+                <img class="brends__img" src="#" alt="Metabo">
+              </a>
+            </article>
           </li>
         </ul>
       </section>
