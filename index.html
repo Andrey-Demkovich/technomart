@@ -78,20 +78,29 @@
           </li>
         </ul>
 
-        <ul class="promo__slider slider">
-          <li class="slider__item">
-            <h3 class="slider__heading">Перфораторы</h3>
-            <img class="slider__image" src="img/slider1.jpg" width="620" height="266" alt="Слайд перфоратор">
-            <p class="slider__text">Настоящие мужские игрушки</p>
-            <a class="slider__link button" href="catalog.html">Открыть каталог</a>
-          </li>
-          <li class="slider__item">
-            <h3 class="slider__heading">Дрели</h3>
-            <img class="slider__image" src="img/slider2.jpg" width="620" height="266" alt="Слайд дрели">
-            <p class="slider__text">Соседям на радость</p>
-            <a class="slider__link button" href="#">Открыть каталог</a>
-          </li>
-        </ul>
+        <div class="promo__slider">
+          <ul class="promo__image slider">
+            <li class="slider__item">
+              <h3 class="slider__heading">Перфораторы</h3>
+              <img class="slider__image" src="img/slider1.jpg" width="620" height="266" alt="Слайд перфоратор">
+              <p class="slider__text">Настоящие мужские игрушки</p>
+              <a class="slider__link button" href="catalog.html">Открыть каталог</a>
+            </li>
+            <li class="slider__item">
+              <h3 class="slider__heading">Дрели</h3>
+              <img class="slider__image" src="img/slider2.jpg" width="620" height="266" alt="Слайд дрели">
+              <p class="slider__text">Соседям на радость</p>
+              <a class="slider__link button" href="#">Открыть каталог</a>
+            </li>
+          </ul>
+
+          <div class="promo__controls controls">
+            <button class="controls__prev" type="button" name="slide-prev">Назад</button>
+            <button class="controls__slide" type="button" name="slide1">Первый слайд</button>
+            <button class="controls__slide" type="button" name="slide2">Второй слайд</button>
+            <button class="controls__next" type="button" name="slide-next">Вперед</button>
+          </div>
+        </div>
 
         <ul class="promo__list--advantage">
           <li class="promo__item">
@@ -337,7 +346,8 @@
           Вы можете забрать товар сами, заехав в наш офис:
         </p>
         <p class="contacts__map">
-          <img class="contacts__map-image" src="img/mini-map.png" width="300" height="158" alt="Карта с адресом">
+          <img class="contacts__map-image" src="img/mini-map.png" width="300" height="158" alt="Карта с адресом:
+           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         </p>
         <a class="contacts__link button" href="#">Заблудились? Напишите нам!</a>
       </section>
@@ -357,8 +367,8 @@
         </ul>
       </div>
 
-      <div class="footer__middle">
-        <p class="header-middle__address">
+      <div class="footer-middle">
+        <p class="footer-middle__address">
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           +7 (812) 555-05-55
         </p>
@@ -402,7 +412,7 @@
 
     <section class="feedback">
       <h2 class="visually-hidden">Окно обратной связи</h2>
-      <button class="feedback__close" type="button" name="close">x</button>
+      <button class="feedback__close buuton-close" type="button" name="close">Закрыть</button>
 
       <form class="feedback__form" action="https://echo.htmlacademy.ru" method="post">
         <p>
@@ -419,7 +429,8 @@
 
     <section class="map">
       <h2 class="visually-hidden">Как до нас добратся</h2>
-      <button type="button" name="map-close">x</button>
+      <button class="map__close button-close" type="button" name="map-close">Закрыть</button>
+      <img src="img/map.jpg" width="940" height="466" alt="Карта с адресом:г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
     </section>
   </body>
 </html>
