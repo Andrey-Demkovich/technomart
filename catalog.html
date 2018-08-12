@@ -16,61 +16,60 @@
             <a class="logo__name" href="index.html">Техномарт</a>
           </p>
           <form class="header-top__form" action="https://echo.htmlacademy.ru" method="post">
-            <label>
-              Поиск:
-              <input class="header-top__form-search" type="search" name="search-header" placeholder="Поиск:">
-            </label>
+            <input class="header-top__form-search" id="search-header" type="search" name="search-header" placeholder="Поиск:">
+            <label class="header-top__form-icon" for="search-header"></label>
           </form>
           <p class="header-top__tab">
-            <a href="#">
+            <a class="header-top__link header-top__link--bookmark" href="#">
               Закладки:
               <output name="result-tab">0</output>
             </a>
           </p>
           <p class="header-top__tab">
-            <a href="#">
+            <a class="header-top__link header-top__link--basket header-top__link--red" href="#">
               Корзина:
-              <output name="result-basket">0</output>
+              <output name="result-basket">10</output>
             </a>
           </p>
           <p class="header-top__order">
-            <a href="#">Оформить заказ</a>
+            <a class="header-top__link header-top__link--order" href="#">Оформить заказ</a>
           </p>
         </div>
       </div>
 
       <div class="container">
-        <div class="header-middle">
+        <div class="header-middle header-middle--catalog">
           <b class="header-middle__item header-middle__heading">Интернет-магазин строительных материалов и инструментов для ремонта</b>
           <div class="header-middle__item header-middle__contacts">
             <p class="header-middle__phone">
-              <img class="header-middle__phone-icon" src="img/icon-phone.svg" alt="Наш номер телефона">
+              <img class="header-middle__phone-icon" src="img/icon-phone.svg" width="19" height="19" alt="Наш номер телефона">
               +7 (812) 555-05-55
             </p>
             <p class="header-middle__address">
               г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             </p>
           </div>
-          <div class="header-middle__authorization authorization-result">
-            <a class="button-authorization button-authorization--exit">
+
+          <div class="header-middle__item header-middle__authorization authorization-result">
+            <a class="button-authorization button-authorization--exit" href="#">
               <output name="result-authorization">Равшан Джамшутович</output>
             </a>
             <ul class="authorization-result__list">
-              <li class="authorization-result__element"><a class="" href="#">Мои заказы</a></li>
-              <li class="authorizatio-resultn__element"><a href="#">Личный кабинет</a></li>
+              <li class="authorization-result__element"><a class="authorization-result__link" href="#">Мои заказы</a></li>
+              <li class="authorization-result__element"><a class="authorization-result__link" href="#">Личный кабинет</a></li>
             </ul>
           </div>
         </div>
 
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="index.html">Главная</a></li>
-            <li class="main-nav__item"><a href="#">Компания</a></li>
-            <li class="main-nav__item"><a>Каталог</a></li>
-            <li class="main-nav__item"><a href="#">Новости</a></li>
-            <li class="main-nav__item"><a href="#">Спецпредложения</a></li>
-            <li class="main-nav__item"><a href="#">Доставка</a></li>
-            <li class="main-nav__item"><a href="#">Контакты</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Компания</a></li>
+            <li class="main-nav__item"><a class="main-nav__link">Каталог</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Новости</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Спецпредложения</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Доставка</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -79,10 +78,12 @@
     <main class="page-main page-main--catalog">
       <div class="container">
         <ul class="breadcrumbs">
-          <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
-          <li class="breadcrumbs__item"><a href="#">Каталог</a></li>
-          <li class="breadcrumbs__item"><a href="#">Инструмент</a></li>
-          <li class="breadcrumbs__item"><a>Перфораторы</a></li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--icon" href="index.html"><span class="visually-hidden">Главная</span></a>
+          </li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Инструмент</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link--active">Перфораторы</a></li>
         </ul>
 
         <div class="product__heading">
@@ -96,17 +97,17 @@
 
             <form class="filter__form" action="https://echo.htmlacademy.ru" method="post">
               <fieldset class="filter__fieldset">
-                <legend class="filter__legend">Цена:</legend>
-                <div class="range__controls">
-                  <div class="range__scale">
-                    <div class="range__bar"></div>
+                <legend class="filter__legend ">Цена:</legend>
+                <div class="range-controls">
+                  <div class="range-controls__scale">
+                    <div class="range-controls__bar"></div>
                   </div>
-                  <div class="range__toggle range__toggle--min"></div>
-                  <div class="range-toggle range__toggle--max"></div>
+                  <div class="range-controls__toggle range-controls__toggle--min"></div>
+                  <div class="range-controls__toggle range-controls__toggle--max"></div>
                 </div>
-                <div class="price__controls">
-                  <label class="price__min"><input type="text" name="min-price" value="0"></label>
-                  <label class="price__max"><input type="text" name="max-price" value="3000"></label>
+                <div class="price-controls">
+                  <label class="price-controls__min"><input type="text" name="min-price" value="0"></label>
+                  <label class="price-controls__max"><input type="text" name="max-price" value="30000"></label>
                 </div>
               </fieldset>
 
@@ -114,32 +115,37 @@
                 <legend class="filter__legend">Производители:</legend>
                 <ul class="filter__list">
                   <li class="filter__item">
-                    <label>
-                      <input type="checkbox" name="Bosch" checked>
+                    <label class="filter__label">
+                      <input class="filter__checkbox visually-hidden" type="checkbox" name="Bosch" checked>
+                      <span class="checkbox-indicator"></span>
                       Bosch
                     </label>
                   </li>
                   <li class="filter__item">
-                    <label>
-                      <input type="checkbox" name="Интерскол">
+                    <label class="filter__label">
+                      <input class="filter__checkbox visually-hidden" type="checkbox" name="Интерскол">
+                      <span class="checkbox-indicator"></span>
                       Интерскол
                     </label>
                   </li>
                   <li class="filter__item">
-                    <label>
-                      <input type="checkbox" name="Makita" checked>
+                    <label class="filter__label">
+                      <input class="filter__checkbox visually-hidden" type="checkbox" name="Makita" checked>
+                      <span class="checkbox-indicator"></span>
                       Makita
                     </label>
                   </li>
                   <li class="filter__item">
-                    <label>
-                      <input type="checkbox" name="DeWalt">
+                    <label class="filter__label">
+                      <input class="filter__checkbox visually-hidden" type="checkbox" name="DeWalt">
+                      <span class="checkbox-indicator"></span>
                       DeWalt
                     </label>
                   </li>
                   <li class="filter__item">
-                    <label>
-                      <input type="checkbox" name="Hitachi">
+                    <label class="filter__label">
+                      <input class="filter__checkbox visually-hidden" type="checkbox" name="Hitachi">
+                      <span class="checkbox-indicator"></span>
                       Hitachi
                     </label>
                   </li>
@@ -150,14 +156,16 @@
                 <legend class="filter__legend">Питание:</legend>
                 <ul class="filter__list">
                   <li class="filter__item">
-                    <label>
-                      <input type="radio" name="power" value="battery" checked>
+                    <label class="filter__label">
+                      <input class="filter__radio visually-hidden" type="radio" name="power" value="battery" checked>
+                      <span class="radio-indicator"></span>
                       Аккумуляторные
                     </label>
                   </li>
                   <li class="filter__item">
-                    <label>
-                      <input type="radio" name="power" value="power-network">
+                    <label class="filter__label">
+                      <input class="filter__radio visually-hidden" type="radio" name="power" value="power-network">
+                      <span class="radio-indicator"></span>
                       Сетевые
                     </label>
                   </li>
@@ -174,22 +182,22 @@
               <p class="sorting__title">Сортировка:</p>
 
               <ul class="sorting__list">
-                <li class="sorting__item">
-                  <a class="sorting__active" href="#">По цене</a>
+                <li class="sorting__item sorting__item--price">
+                  <a class="sorting__link sorting__link--active" href="#">По цене</a>
                 </li>
-                <li class="sorting__item">
-                  <a href="#">По типу</a>
+                <li class="sorting__item sorting__item--type">
+                  <a class="sorting__link" href="#">По типу</a>
                 </li>
-                <li class="sorting__item">
-                  <a href="#">По функционалу</a>
+                <li class="sorting__item sorting__item--function">
+                  <a class="sorting__link" href="#">По функционалу</a>
                 </li>
               </ul>
 
               <div class="sortinng__arrow arrow">
-                <a class="arrow__up sorting__active" href="#">
+                <a class="arrow__button arrow__button--up arrow__button--active">
                   <span class="visually-hidden">По возрастанию</span>
                 </a>
-                <a class="arrow__down" href="#">
+                <a class="arrow__button arrow__button--down" href="#">
                   <span class="visually-hidden">По убыванию</span>
                 </a>
               </div>
@@ -200,18 +208,15 @@
 
               <ul class="product__list product__list--catalog cards">
                 <li class="cards__item">
-                  <article class="goods">
+                  <article class="goods" tabindex="0">
                     <h3 class="goods__caption">
                       <span class="goods__name">Перфоратор BOSCH</span>
                       <span class="goods__model">BFG 3000</span>
                     </h3>
-                    <p class="goods__new"></p>
-                    <div class="goods__image-select">
+                    <div class="goods__select">
+                      <button class="goods__button button button--green" type="button" name="add-basket">Купить</button>
+                      <button class="goods__button button button--border-green" type="button" name="add-tab">В закладки</button>
                       <img class="goods__image" src="img/bosch-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-                      <div class="goods__select">
-                        <button class="button button--green" type="button" name="add-basket">Купить</button>
-                        <button class="button button--border-green" type="button" name="add-tab">В закладки</button>
-                      </div>
                     </div>
                     <p class="goods__price">
                       <span class="goods__value">22500 Р.</span>
@@ -220,18 +225,15 @@
                   </article>
                 </li>
                 <li class="cards__item">
-                  <article class="goods">
+                  <article class="goods" tabindex="0">
                     <h3 class="goods__caption">
                       <span class="goods__name">Перфоратор BOSCH</span>
                       <span class="goods__model">BFG 6000</span>
                     </h3>
-                    <p class="goods__new"></p>
-                    <div class="goods__image-select">
+                    <div class="goods__select">
+                      <button class="goods__button button button--green" type="button" name="add-basket">Купить</button>
+                      <button class="goods__button button button--border-green" type="button" name="add-tab">В закладки</button>
                       <img class="goods__image" src="img/bosch-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
-                      <div class="goods__select">
-                        <button class="button button--green" type="button" name="add-basket">Купить</button>
-                        <button class="button button--border-green" type="button" name="add-tab">В закладки</button>
-                      </div>
                     </div>
                     <p class="goods__price">
                       <span class="goods__value">30500 Р.</span>
@@ -240,38 +242,35 @@
                   </article>
                 </li>
                 <li class="cards__item">
-                  <article class="goods">
+                  <article class="goods new" tabindex="0">
                     <h3 class="goods__caption">
+                      <strong class="visually-hidden">Новинка</strong>
                       <span class="goods__name">Перфоратор BOSCH</span>
                       <span class="goods__model">BFG 2000</span>
                     </h3>
-                    <p class="goods__new">New</p>
-                    <div class="goods__image-select">
-                      <img class="goods__image" src="#" alt="Перфоратор BOSCH BFG 2000">
-                      <div class="goods__select">
-                        <button class="button button--green" type="button" name="add-basket">Купить</button>
-                        <button class="button button--border-green" type="button" name="add-tab">В закладки</button>
-                      </div>
+                    <div class="goods__select">
+                      <button class="goods__button button button--green" type="button" name="add-basket">Купить</button>
+                      <button class="goods__button button button--border-green" type="button" name="add-tab">В закладки</button>
+                      <img class="goods__image" src="#" width="218" height="170" alt="">
                     </div>
                     <p class="goods__price">
-                      <span class="goods__value"></span>
+                      <span class="goods__value goods__value--hidden">12500 Р.</span>
                       <b class="goods__discount">12500 Р.</b>
                     </p>
                   </article>
                 </li>
+
+
                 <li class="cards__item">
-                  <article class="goods">
+                  <article class="goods" tabindex="0">
                     <h3 class="goods__caption">
                       <span class="goods__name">Перфоратор BOSCH</span>
                       <span class="goods__model">BFG 3000</span>
                     </h3>
-                    <p class="goods__new"></p>
-                    <div class="goods__image-select">
+                    <div class="goods__select">
+                      <button class="goods__button button button--green" type="button" name="add-basket">Купить</button>
+                      <button class="goods__button button button--border-green" type="button" name="add-tab">В закладки</button>
                       <img class="goods__image" src="img/bosch-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-                      <div class="goods__select">
-                        <button class="button button--green" type="button" name="add-basket">Купить</button>
-                        <button class="button button--border-green" type="button" name="add-tab">В закладки</button>
-                      </div>
                     </div>
                     <p class="goods__price">
                       <span class="goods__value">22500 Р.</span>
@@ -280,18 +279,16 @@
                   </article>
                 </li>
                 <li class="cards__item">
-                  <article class="goods">
+                  <article class="goods new" tabindex="0">
                     <h3 class="goods__caption">
+                      <strong class="visually-hidden">Новинка</strong>
                       <span class="goods__name">Перфоратор BOSCH</span>
                       <span class="goods__model">BFG 6000</span>
                     </h3>
-                    <p class="goods__new"></p>
-                    <div class="goods__image-select">
+                    <div class="goods__select">
+                      <button class="goods__button button button--green" type="button" name="add-basket">Купить</button>
+                      <button class="goods__button button button--border-green" type="button" name="add-tab">В закладки</button>
                       <img class="goods__image" src="img/bosch-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
-                      <div class="goods__select">
-                        <button class="button button--green" type="button" name="add-basket">Купить</button>
-                        <button class="button button--border-green" type="button" name="add-tab">В закладки</button>
-                      </div>
                     </div>
                     <p class="goods__price">
                       <span class="goods__value">30500 Р.</span>
@@ -300,38 +297,34 @@
                   </article>
                 </li>
                 <li class="cards__item">
-                  <article class="goods">
+                  <article class="goods" tabindex="0">
                     <h3 class="goods__caption">
                       <span class="goods__name">Перфоратор BOSCH</span>
                       <span class="goods__model">BFG 2000</span>
                     </h3>
-                    <p class="goods__new">New</p>
-                    <div class="goods__image-select">
+                    <div class="goods__select">
+                      <button class="goods__button button button--green" type="button" name="add-basket">Купить</button>
+                      <button class="goods__button button button--border-green" type="button" name="add-tab">В закладки</button>
                       <img class="goods__image" src="img/bosch-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
-                      <div class="goods__select">
-                        <button class="button button--green" type="button" name="add-basket">Купить</button>
-                        <button class="button button--border-green" type="button" name="add-tab">В закладки</button>
-                      </div>
                     </div>
                     <p class="goods__price">
-                      <span class="goods__value"></span>
+                      <span class="goods__value goods__value--hidden">12500 Р.</span>
                       <b class="goods__discount">12500 Р.</b>
                     </p>
                   </article>
                 </li>
+
                 <li class="cards__item">
-                  <article class="goods">
+                  <article class="goods new" tabindex="0">
                     <h3 class="goods__caption">
+                      <strong class="visually-hidden">Новинка</strong>
                       <span class="goods__name">Перфоратор BOSCH</span>
                       <span class="goods__model">BFG 3000</span>
                     </h3>
-                    <p class="goods__new"></p>
-                    <div class="goods__image-select">
+                    <div class="goods__select">
+                      <button class="goods__button button button--green" type="button" name="add-basket">Купить</button>
+                      <button class="goods__button button button--border-green" type="button" name="add-tab">В закладки</button>
                       <img class="goods__image" src="img/bosch-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
-                      <div class="goods__select">
-                        <button class="button button--green" type="button" name="add-basket">Купить</button>
-                        <button class="button button--border-green" type="button" name="add-tab">В закладки</button>
-                      </div>
                     </div>
                     <p class="goods__price">
                       <span class="goods__value">22500 Р.</span>
@@ -340,18 +333,15 @@
                   </article>
                 </li>
                 <li class="cards__item">
-                  <article class="goods">
+                  <article class="goods" tabindex="0">
                     <h3 class="goods__caption">
                       <span class="goods__name">Перфоратор BOSCH</span>
                       <span class="goods__model">BFG 6000</span>
                     </h3>
-                    <p class="goods__new"></p>
-                    <div class="goods__image-select">
+                    <div class="goods__select">
+                      <button class="goods__button button button--green" type="button" name="add-basket">Купить</button>
+                      <button class="goods__button button button--border-green" type="button" name="add-tab">В закладки</button>
                       <img class="goods__image" src="img/bosch-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
-                      <div class="goods__select">
-                        <button class="button button--green" type="button" name="add-basket">Купить</button>
-                        <button class="button button--border-green" type="button" name="add-tab">В закладки</button>
-                      </div>
                     </div>
                     <p class="goods__price">
                       <span class="goods__value">30500 Р.</span>
@@ -360,21 +350,18 @@
                   </article>
                 </li>
                 <li class="cards__item">
-                  <article class="goods">
+                  <article class="goods" tabindex="0">
                     <h3 class="goods__caption">
                       <span class="goods__name">Перфоратор BOSCH</span>
                       <span class="goods__model">BFG 2000</span>
                     </h3>
-                    <p class="goods__new">New</p>
-                    <div class="goods__image-select">
+                    <div class="goods__select">
+                      <button class="goods__button button button--green" type="button" name="add-basket">Купить</button>
+                      <button class="goods__button button button--border-green" type="button" name="add-tab">В закладки</button>
                       <img class="goods__image" src="img/bosch-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
-                      <div class="goods__select">
-                        <button class="button button--green" type="button" name="add-basket">Купить</button>
-                        <button class="button button--border-green" type="button" name="add-tab">В закладки</button>
-                      </div>
                     </div>
                     <p class="goods__price">
-                      <span class="goods__value"></span>
+                      <span class="goods__value goods__value--hidden">12500 Р.</span>
                       <b class="goods__discount">12500 Р.</b>
                     </p>
                   </article>
@@ -386,7 +373,7 @@
                   <li class="pagination__item visually-hidden">
                     <a class="button button--catalog button--catalog--long" href="#">Предыдущая</a>
                   </li>
-                  <li class="pagination__item"><a class="button button--catalog pagination-active" href="#">1</a></li>
+                  <li class="pagination__item"><a class="button button--catalog button--catalog--active">1</a></li>
                   <li class="pagination__item"><a class="button button--catalog" href="#">2</a></li>
                   <li class="pagination__item"><a class="button button--catalog" href="#">3</a></li>
                   <li class="pagination__item"><a class="button button--catalog button--catalog--long" href="#">Следующая</a></li>
@@ -416,14 +403,14 @@
       <div class="container">
         <div class="footer-top">
           <p class="footer-top__logo logo">
-            <a class="logo__name" href="index.html">Техномарт</a>
+            <a class="logo__name logo__name--footer" href="index.html">Техномарт</a>
           </p>
           <ul class="footer-top__menu menu">
-            <li class="menu__item"><a href="#">Компания</a></li>
-            <li class="menu__item"><a href="#">Новости</a></li>
-            <li class="menu__item"><a href="catalog.html">Каталог</a></li>
-            <li class="menu__item"><a href="#">Доставка</a></li>
-            <li class="menu__item"><a href="#">Контакты</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Компания</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Новости</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Каталог</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Доставка</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
           </ul>
         </div>
 
@@ -433,10 +420,10 @@
             +7 (812) 555-05-55
           </p>
           <ul class="footer-middle__goods menu menu--yellow">
-            <li class="menu__item"><a href="#">Материалы</a></li>
-            <li class="menu__item"><a href="#">Техника</a></li>
-            <li class="menu__item"><a href="#">Инструмент</a></li>
-            <li class="menu__item"><a href="#">Спецпредложения</a></li>
+            <li class="menu__item"><a class="menu__link menu__link--yellow" href="#">Материалы</a></li>
+            <li class="menu__item"><a class="menu__link menu__link--yellow" href="#">Техника</a></li>
+            <li class="menu__item"><a class="menu__link menu__link--yellow" href="#">Инструмент</a></li>
+            <li class="menu__item"><a class="menu__link menu__link--yellow" href="#">Спецпредложения</a></li>
           </ul>
         </div>
       </div>
@@ -450,37 +437,59 @@
 
           <ul class="footer-bottom__social">
             <li>
-              <a  class="social-button social-button--vk" href="#"><span class="">Мы Вконтакте</span></a>
+              <a  class="social-button social-button--vk" href="#">
+                <span class="visually-hidden">Мы Вконтакте</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15">
+                  <path fill="#FFF" d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z"/>
+                </svg>
+              </a>
             </li>
             <li>
-              <a  class="social-button social-button--fb" href="#"><span class="">Мы в Фейсбуке</span></a>
+              <a  class="social-button social-button--fb" href="#">
+                <span class="visually-hidden">Мы в Фейсбуке</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22">
+                  <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
+                </svg>
+              </a>
             </li>
             <li>
-              <a  class="social-button social-button--ig" href="#"><span class="">Мы в Инстаграм</span></a>
+              <a  class="social-button social-button--ig" href="#">
+                <span class="visually-hidden">Мы в Инстаграм</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21">
+                  <path fill="#FFF" d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/>
+                </svg>
+              </a>
             </li>
           </ul>
 
-          <div class="footer-bottom__contacts">
-            <p class="footer-bottom__feedback">
-              Обратная связь:
-              <a href="#">mail@htmlacademy.ru</a>
-            </p>
-            <p class="footer-bottom__developer">
-              Разработано —
-              <a href="#">htmlacademy.ru</a>
-            </p>
-          </div>
+          <p class="footer-bottom__feedback">
+            Обратная связь:
+            <a class="footer-bottom__link" href="#">mail@htmlacademy.ru</a>
+          </p>
+          <p class="footer-bottom__developer">
+            Разработано —
+            <a class="footer-bottom__link" href="#">htmlacademy.ru</a>
+          </p>
         </div>
       </div>
     </footer>
 
-    <section class="card-add-basket">
-      <h2 class="visually-hidden">Карточка добавления товара в корзину</h2>
-      <button class="card-add-basket__close button-close" type="button" name="card-add-close">Закрыть</button>
-      <p>Товар добавлен в корзину</p>
-      <p class="card-add-basket__buttons">
-        <a class="button button__card-add-basket" href="#">Оформить заказ</a>
-        <button class="button button__card-add-basket button--white" type="button" name="card-add-close">Продолжить покупки</button>
-      </p>
+    <section class="card-add-basket pop-up">
+      <div class="pop-up__container">
+        <h2 class="visually-hidden">Карточка добавления товара в корзину</h2>
+        <button class="card-add-basket__close button-close" type="button" name="card-add-close">Закрыть</button>
+        <div class="card-add-basket__green-selected">
+        </div>
+        <strong class="card-add-basket__text">Товар добавлен в корзину!</strong>
+      </div>
+      <div class="pop-up__wrapper-grey pop-up__wrapper-grey--card-add-basket">
+        <div class="pop-up__container">
+          <a class="button button__card-add-basket" href="#">Оформить заказ</a>
+          <button class="button button__card-add-basket button--white" type="button" name="card-add-close">
+            Продолжить покупки
+          </button>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
